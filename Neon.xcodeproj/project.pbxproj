@@ -24,8 +24,6 @@
 		8C3B3B8E20E679D900F6023F /* NeonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B3B7F20E679D900F6023F /* NeonExtensions.swift */; };
 		8C3B3B8F20E679D900F6023F /* NeonRTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B3B8020E679D900F6023F /* NeonRTL.swift */; };
 		8C3B3B9020E679D900F6023F /* NeonRTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B3B8020E679D900F6023F /* NeonRTL.swift */; };
-		8C3B3B9120E679D900F6023F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C3B3B8120E679D900F6023F /* Info.plist */; };
-		8C3B3B9220E679D900F6023F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C3B3B8120E679D900F6023F /* Info.plist */; };
 		8C3B3B9320E679D900F6023F /* Neon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B3B8220E679D900F6023F /* Neon.swift */; };
 		8C3B3B9420E679D900F6023F /* Neon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B3B8220E679D900F6023F /* Neon.swift */; };
 		8C3B3BBE20E67A1300F6023F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B3BB420E67A1300F6023F /* ViewController.swift */; };
@@ -367,7 +365,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C3B3B9120E679D900F6023F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +372,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C3B3B9220E679D900F6023F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
