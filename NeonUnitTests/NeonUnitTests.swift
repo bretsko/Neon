@@ -159,6 +159,18 @@ class NeonTests: XCTestCase {
 
         testAnchorView.anchorToEdge(.right, padding: 10, width: 30, height: 40)
         XCTAssert(testAnchorView.frame == CGRect(x: 960, y: 480, width: 30, height: 40))
+
+        testAnchorView.anchorToEdge(.top, padding: 10, width: 30, height: 40, offset: 10)
+        XCTAssert(testAnchorView.frame == CGRect(x: 495, y: 10, width: 30, height: 40))
+
+        testAnchorView.anchorToEdge(.left, padding: 10, width: 30, height: 40, offset: 10)
+        XCTAssert(testAnchorView.frame == CGRect(x: 10, y: 490, width: 30, height: 40))
+
+        testAnchorView.anchorToEdge(.bottom, padding: 10, width: 30, height: 40, offset: 10)
+        XCTAssert(testAnchorView.frame == CGRect(x: 495, y: 950, width: 30, height: 40))
+
+        testAnchorView.anchorToEdge(.right, padding: 10, width: 30, height: 40, offset: 10)
+        XCTAssert(testAnchorView.frame == CGRect(x: 960, y: 490, width: 30, height: 40))
     }
 
     func testAnchorAndFillEdge() {

@@ -131,26 +131,26 @@ public extension Anchorable {
     ///
     ///   - height: The height of the view.
     ///
-    public func anchorToEdge(_ edge: Edge, padding: CGFloat, width: CGFloat, height: CGFloat) {
+    public func anchorToEdge(_ edge: Edge, padding: CGFloat, width: CGFloat, height: CGFloat, offset: CGFloat = 0) {
         var xOrigin : CGFloat = 0.0
         var yOrigin : CGFloat = 0.0
 
         switch edge.toInternal(self) {
         case .top:
-            xOrigin = (superFrame.width / 2.0) - (width / 2.0)
+            xOrigin = (superFrame.width / 2.0) - (width / 2.0) + offset
             yOrigin = padding
 
         case .left:
             xOrigin = padding
-            yOrigin = (superFrame.height / 2.0) - (height / 2.0)
+            yOrigin = (superFrame.height / 2.0) - (height / 2.0) + offset
 
         case .bottom:
-            xOrigin = (superFrame.width / 2.0) - (width / 2.0)
+            xOrigin = (superFrame.width / 2.0) - (width / 2.0) + offset
             yOrigin = superFrame.height - height - padding
 
         case .right:
             xOrigin = superFrame.width - width - padding
-            yOrigin = (superFrame.height / 2.0) - (height / 2.0)
+            yOrigin = (superFrame.height / 2.0) - (height / 2.0) + offset
         }
 
         frame = CGRect(x: xOrigin, y: yOrigin, width: max(width, 0), height: max(height, 0))
