@@ -1,4 +1,0 @@
-coverage_service: coveralls
-xcodeproj: Neon.xcodeproj
-scheme: NeonUnitTests
-source_directory: Source
